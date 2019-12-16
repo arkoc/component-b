@@ -23,13 +23,13 @@ namespace ComponentB.Models
         public TransactionStatus Status { get; set; }
 
         /// <summary>
-        /// Gets or sets the source of the transaction.
+        /// Gets or sets the sources list of the transaction.
         /// </summary>
-        public string Source { get; set; }
+        public List<AddressAmountPair> Sources { get; set; } = new List<AddressAmountPair>();
 
         /// <summary>
         /// Gets or sets the recipient list of the transaction.
         /// </summary>
-        public List<TransactionRecipientModel> Recipients { get; set; } = new List<TransactionRecipientModel>();
+        public List<AddressAmountPair> Recipients { get; set; } = new List<AddressAmountPair>();
     }
 }

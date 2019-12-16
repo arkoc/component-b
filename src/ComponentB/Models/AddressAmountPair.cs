@@ -3,17 +3,17 @@
 namespace ComponentB.Models
 {
     /// <summary>
-    /// A recipient class, which represents a single (address, value) tuple.
+    /// A class for address amount pair
     /// </summary>
-    public class TransactionRecipientModel
+    public class AddressAmountPair
     {
         /// <summary>
-        /// Gets or sets the address of the recipient.
+        /// Gets or sets the address.
         /// </summary>
         public string Address { get; set; }
 
         /// <summary>
-        /// Gets or sets the sent amount to the recipient.
+        /// Gets or sets the amount.
         /// </summary>
         public BigDecimal Amount { get; set; }
     }

@@ -1,10 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
+using System.Threading.Tasks;
 
 namespace ComponentB.Stores
 {
-    interface IBlockchainNodesStore
+    public interface IBlockchainNodesStore
     {
+        Task<Uri[]> GetNodesAsync(string blockchain);
     }
 }
